@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kozak Currency Converter</title>
+  <link rel="stylesheet" href="currency.css">
+  <script src="currency.js"></script>
+</head>
+<body>
+  <div class="startCurrContainer">
+    <h1>Currency Converter</h1>
+    <form>
+      <input type="number" id="num" name="Ammount" min="0" value="1">
+      <select name="dropdown" id="dropdownSelector">
+        <option value="usd">United States Dollar</option>
+        <option value="eur">Euro</option>
+        <option value="cny">Chinese Yuan</option>
+        <option value="jpy">Japanese Yen</option>
+        <option value="gbp">British Pound</option>
+        <option value="mxn">Mexican Peso</option>
+        <option value="cad">Canadian Dollar</option>
+        <option value="aud">Austrailian Dollar</option>
+        <option value="rub">Russian Ruble</option>
+        <option value="chf">Swiss Franc</option>
+        <option value="nzd">New Zealand Dollar</option>
+        <option value="vnd">Vietnamese Dong</option>
+      </select>
+      <button type="button" onclick="convert()">Convert</button>
+    </form>
+    <hr />
+  </div>
+  <div id="infoContainer">
+    <div class="currContainer">
+      <img src="flag images/united-states-of-america-flag-small.png" />
+      <p class="currencyNum" id="usd">--</p>
+      <h2>United States Dollar</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/europe-flag-small.png" />
+      <p class="currencyNum" id="eur">--</p>
+      <h2>Euro</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/china-flag-small.png" />
+      <p class="currencyNum" id="cny">--</p>
+      <h2>Chinese Yuan</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/japan-flag-small.png" />
+      <p class="currencyNum" id="jpy">--</p>
+      <h2>Japanese Yen</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/united-kingdom-flag-small.png" />
+      <p class="currencyNum" id="gbp">--</p>
+      <h2>British Pound</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/mexico-flag-small.png" />
+      <p class="currencyNum" id="mxn">--</p>
+      <h2>Mexican Peso</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/canada-flag-small.png" />
+      <p class="currencyNum" id="cad">--</p>
+      <h2>Canadian Dallar</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/australia-flag-small.png" />
+      <p class="currencyNum" id="aud">--</p>
+      <h2>Australian Dollar</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/russia-flag-small.png" />
+      <p class="currencyNum" id="rub">--</p>
+      <h2>Russian Ruble</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/switzerland-flag-small.png" />
+      <p class="currencyNum" id="chf">--</p>
+      <h2>Swiss Franc</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/new-zealand-flag-small.png" />
+      <p class="currencyNum" id="nzd">--</p>
+      <h2>New Zealand Dollar</h2>
+    </div>
+    <div class="currContainer">
+      <img src="flag images/vietnam-flag-small.png" />
+      <p class="currencyNum" id="vnd">--</p>
+      <h2>Vietnamese Dong</h2>
+    </div>
+  </div>
+</body>
+</html>
